@@ -17,7 +17,7 @@ import GHC.Generics
 
 -- Public API/types.
 
--- Data structure that holds information about a DockerHub repository.
+-- Data type that holds information about a DockerHub repository.
 data Repository = Repository { name :: String
                              , triggerToken :: String } deriving (Show, Generic)
 

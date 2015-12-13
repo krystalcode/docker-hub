@@ -24,7 +24,7 @@ import GHC.Generics
 -- Data type that holds information about a DockerHub account.
 data Config = Config { repositories :: [Repository] } deriving (Show, Generic)
 
--- Load a configuration file and convert it to a Config object.
+-- Load a configuration file and convert it to a Config value.
 {-
   @Issue(
     "Add support for other file types too"
