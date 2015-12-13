@@ -1,0 +1,12 @@
+project:
+    name : krystalcode/docker-hub
+
+schema:
+    include    : []
+    exclude    : []
+    extensions : [hs, cabal, yml, yaml]
+
+issues:
+    - title    : Add ability to connect to DockerHub account and get account information from there
+      type     : feature
+      priority : major
