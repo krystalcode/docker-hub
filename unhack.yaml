@@ -34,3 +34,6 @@ issues:
     - title    : Allow a repository configuration option for giving a shortcut name to a repo
       type     : feature
       priority : low
+    - title    : Add a command line option to specify which tag to build or pull
+      type     : feature
+      priority : normal
