@@ -10,3 +10,24 @@ issues:
     - title    : Add ability to connect to DockerHub account and get account information from there
       type     : feature
       priority : major
+    - title    : Load .docker-hub.yaml file from current working directory, if not present fall ~/.docker/docker-hub.yaml, if not present require a path as an option
+      type     : improvement
+      priority : major
+    - title    : Store the timestamp that each repository was last built and use it to identify whether a Dockerfile in a git repo needs building
+      type     : feature
+      priority : major
+    - title    : Add a command to build all DockerHub repositories in a git repository, as necessary based on last built timestamp
+      type     : improvement
+      priority : major
+    - title    : Add global option to convert dashes to underscores when matching docker projects with git folders
+      type     : feature
+      priority : low
+    - title    : Add a configuration option on docker-hub.yaml to specify the path in the git repo that the project corresponds to
+      type     : improvement
+      priority : normal
+    - title    : Add a command line option to pass on the path to the git repo that contains the projects that we want to operate upon
+      type     : improvement
+      priority : low
+    - title    : Establish a workflow for building an executable for both Redhat and Debian based distributions
+      type     : task
+      priority : low
