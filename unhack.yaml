@@ -31,3 +31,6 @@ issues:
     - title    : Establish a workflow for building an executable for both Redhat and Debian based distributions
       type     : task
       priority : low
+    - title    : Allow a repository configuration option for giving a shortcut name to a repo
+      type     : feature
+      priority : low
