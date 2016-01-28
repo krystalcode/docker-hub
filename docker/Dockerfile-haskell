@@ -1,0 +1,6 @@
+FROM krystalcode/f_haskell_stack
+
+# Install packages required to be made available by the OS.
+RUN dnf -y install libcurl-devel && dnf clean all
+
+WORKDIR /src

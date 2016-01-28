@@ -1,0 +1,7 @@
+haskell:
+  build:          ./docker
+  dockerfile:     Dockerfile-haskell
+  container_name: docker_hub_haskell
+  volumes:
+    - .:/src
+  command: sleep infinity
