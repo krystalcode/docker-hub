@@ -1,5 +1,4 @@
-module DockerHub.Build
-       ( build ) where
+module DockerHub.Build ( build ) where
 
 import DockerHub.Data
 import Network.Curl (curlPost)
@@ -15,6 +14,6 @@ build repositories = mapM build' repositories
 -- Trigger build for an individual repository.
 build' :: Repository -> IO ()
 build' repository = curlPost requestUrl []
-                    where requestUrl = "https://registry.hub.docker.com/u/" ++ repoName ++ "/trigger/" ++ repoTriggerToken ++ "/"
-                          repoName = name repository
-                          repoTriggerToken = triggerToken repository
+    where requestUrl = "https://registry.hub.docker.com/u/" ++ repoName ++ "/trigger/" ++ repoTriggerToken ++ "/"
+          repoName = name repository
+          repoTriggerToken = triggerToken repository
